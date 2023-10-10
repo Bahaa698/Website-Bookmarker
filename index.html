@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmark</title>
+    <link rel="icon" href="CSS/favicon.ico">
+    <link rel="stylesheet" href="CSS/all.min.css">
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+    <section class="primary">
+        <div class="container">
+            <div class="main-name">
+                <h1>
+                    <span class="position-relative">
+                        BookmarkeR
+                    </span>
+                </h1>
+            </div>
+            <div class="myForm">
+                <div class="secondary-div">
+                    <h2 class="text-center"><i class="fa-solid fa-bookmark"></i> Bookmark Your Favourite Sites <i
+                            class="fa-solid fa-bookmark"></i></h2>
+                    <i class="fa-solid fa-book-bookmark"></i> <label class="fw-bold text-muted">Site Name</label>
+                    <input class="form-control" type="text" id="name" placeholder="Website Name">
+                    <div id="invalidName" class="form-control d-none bg-warning text-black mt-2"><i
+                            class="fa-solid fa-warning"></i>Invalid Name, do not include numbers or special characters, do not leave site name empty
+                    </div><i class="fa-solid fa-link"></i>
+                    <label class="fw-bold pt-3 text-muted">Site URL</label>
+                    <input class="form-control" type="text" id="url" placeholder="Website URL">
+                    <div id="wrongURL" class="form-control d-none bg-warning text-black mt-2"><i
+                            class="fa-solid fa-warning"></i>
+                        The URL Must Begin with www.sitename.com or https://site.com</div>
+                    <div class="d-flex justify-content-center align-items-center mt-3">
+                        <button onclick="addData()" class="px-5 btn btn-submit" id="submitBtn">Submit</button>
+                        <button onclick="updateInfo()" class="px-5 btn btn-update d-none" id="updateBtn">Update</button>
+                    </div>
+                    <input id="search" onkeyup="searchData(this.value)" type="text"
+                        class="form-control my-3 w-75 mx-auto" placeholder="Search your keyword here!">
+                </div>
+            </div>
+    </section>
+    <div class="container overflow-auto py-3">
+        <table class="table table-responsive table-hover text-center">
+            <thead>
+                <th>Index</th>
+                <th>Website Name</th>
+                <th>Website URL</th>
+                <th>Visit</th>
+                <th>Update</th>
+                <th>Delete</th>
+            </thead>
+            <tbody id="tableData">
+
+            </tbody>
+        </table>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="JS/main.js"></script>
+</body>
+
+</html>

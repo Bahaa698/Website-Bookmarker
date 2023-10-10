@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;400;600;700&family=PT+Sans+Caption&family=Pacifico&family=Righteous&display=swap');
+
+
+body{
+    background-color: bisque;
+}
+
+.main-name{
+    text-align: center;
+    padding-top: 50px;
+}
+
+.myForm{
+    border-top: 2px dotted;
+    border-bottom: 2px dotted;
+    margin:30px 0;
+}
+
+.secondary-div{
+    padding: 20px 0;
+}
+
+span{
+    font-family: 'Pacifico', cursive;
+    font-size: 50px;
+    cursor: default;
+}
+
+span::after{
+    content: "";
+    position: absolute;
+    width: 270px;
+    height: 20px;
+    background-color: #FFC107;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: -1;
+    transition: all 350ms;
+    
+}
+
+
+span:hover::after{
+    top:0%;
+    height: 100%;
+}
+
+
+
+h2{
+    font-family: 'Righteous', cursive;
+    font-size: 25px;
+    background: linear-gradient(to right, #258641,#FFC107);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.btn{
+    color: #fff;
+    transition: all .2s;
+}
+
+.btn-submit{
+    background-color: #d1512d;
+    color: #fff;
+}
+
+.btn-submit:hover{
+    background-color: #953f27;
+    color: #fff;
+}
+
+
+.btn-update{    
+    background-color: #e25e69;
+
+}
+
+.btn-update:hover{
+    background-color: #a41723;
+    color: #fff;
+}
